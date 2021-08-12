@@ -15,13 +15,13 @@
                         <a href="#"><h5 class="colorPrimary">Chào mừng bạn đến với <span class="colorPrimary font-bold">StudentViet</span> !</h5></a>
                         <form>
                             <div class="group">
-                                <input type="text" required>
+                                <input type="text" required oninvalid="this.setCustomValidity('Vui lòng nhập email hoặc số điện thoại')" oninput="this.setCustomValidity('')">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Email hoặc số điện thoại</label>
                             </div>
                             <div class="group">
-                                <input type="text" required>
+                                <input type="text" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')" oninput="this.setCustomValidity('')">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label>Mật khẩu</label>
