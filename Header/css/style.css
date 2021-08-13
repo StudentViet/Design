@@ -24,18 +24,27 @@ nav {
     font-weight: 500px;
     letter-spacing: 1px;
 }
-.notification-btn {
+.icon-btn {
     position: relative;
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: rgb(240, 242, 245) none repeat scroll 0% 0%;
+    background: rgb(240, 242, 245);
     text-align: center;
     margin-top: 15px;
+    margin-left: 10px;
     padding-top: 13px;
     cursor: pointer;
+    transition: 0.2s;
 }
-.notification-btn .amount {
+.icon-btn:hover {
+    background: silver;
+}
+.icon-btn:hover .amount {
+    background: #ab261d;
+    color: gray;
+}
+.icon-btn .amount {
     background: red;
     position: absolute;
     right: 0;
@@ -47,6 +56,7 @@ nav {
     text-align: center;
     font-weight: bold;
     border-radius: 50%;
+    transition: 0.2s;
 }
 .font-bold {
     font-weight: 600 !important;
